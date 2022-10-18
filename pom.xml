@@ -36,14 +36,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Box-Releases Nexus Repository</name>
-	      <url>http://13.234.33.178:8081/repository/box-release/</url>
+	      <name>Boxfuse-Releases Nexus Repository</name>
+	      <url>http://65.1.65.243:8081/repository/boxfuse-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Box-Snapshot Nexus Repository </name>
-	      <url>http://13.234.33.178:8081/repository/box-snapshot/</url>
+	      <name>Boxfuse-Snapshot Nexus Repository </name>
+	      <url>http://65.1.65.243:8081/repository/boxfuse-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
