@@ -8,20 +8,20 @@
 
 <h2>You have successfully launched your Instance!</h2>
 
-<p>This Instance is running on <strong><%= System.getenv("AKSHA_PLATFORM_NAME") %>
-</strong> and has the id <strong><%= System.getenv("AKSHA_INSTANCE_ID") %>
+<p>This Instance is running on <strong><%= System.getenv("BOXFUSE_PLATFORM_NAME") %>
+</strong> and has the id <strong><%= System.getenv("BOXFUSE_INSTANCE_ID") %>
 </strong>.</p>
 
-<p>It is based on the Image <strong><%= System.getenv("AKSHA_IMAGE_COORDINATES")%>
-</strong> generated from <strong><%= System.getenv("AKSHA_PAYLOAD_NAME")%>
+<p>It is based on the Image <strong><%= System.getenv("BOXFUSE_IMAGE_COORDINATES")%>
+</strong> generated from <strong><%= System.getenv("BOXFUSE_PAYLOAD_NAME")%>
 </strong></p>
 
-<% if("virtualbox".equals(System.getenv("AKSHA_PLATFORM_ID"))) { %>
+<% if("virtualbox".equals(System.getenv("BOXFUSE_PLATFORM_ID"))) { %>
 <h2 style="margin-top: 80px">Next steps</h2>
 
 <p style="margin-bottom: 20px;">
     Display the Instance console:<br/>
-    <strong>boxfuse logs <%= System.getenv("AKSHA_INSTANCE_ID") %>
+    <strong>boxfuse logs <%= System.getenv("BOXFUSE_INSTANCE_ID") %>
     </strong>
 </p>
 
@@ -37,7 +37,7 @@
 
 <p>
     Gracefully kill the Instance:<br/>
-    <strong>boxfuse kill <%= System.getenv("AKSHA_INSTANCE_ID") %>
+    <strong>boxfuse kill <%= System.getenv("BOXFUSE_INSTANCE_ID") %>
     </strong>
 </p>
 
