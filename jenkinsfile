@@ -23,11 +23,12 @@ pipeline {
         }
         stage('static code analysis'){
             steps{
-              script{
-               withSonarQubeEnv(credentialsId: 'sonar') {
-                    sh 'mvn sonar:sonar'
-               }
-              }
+                script {
+                    scannerHome = tool 'sonar';
+                }
+                    withSonarQubeEnv(credentialsId: 'sonar') {
+                        sh 'mvn clean sonar:sonar'
+                }
             }
         }            
     }
