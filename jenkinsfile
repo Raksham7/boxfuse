@@ -29,7 +29,7 @@ pipeline {
                 script {
                     scannerHome = tool 'sonar';
                       withSonarQubeEnv(credentialsId: 'sonar') {
-                        sh '${scannerHome}/bin/sonar-scanner'
+                        sh '${mavenHome}/bin/mvn clean sonar:sonar'
                        }
                 }
             }            
