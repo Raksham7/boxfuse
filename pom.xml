@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.boxfuse.samples</groupId>
     <artifactId>hello</artifactId>
-    <packaging>default-war</packaging>
+    <packaging>war</packaging>
     <version>1.0</version>
     <name>hello</name>
     <url>https://github.com/boxfuse/boxfuse-sample-java-war-hello</url>
