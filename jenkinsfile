@@ -6,7 +6,7 @@ pipeline {
                 git credentialsId: 'git', url: 'https://github.com/Raksham7/boxfuse.git'
             }
         }
-        stage("UNIT Testing"){
+        stage("Testing"){
             steps{
                 sh 'mvn test' 
             }
