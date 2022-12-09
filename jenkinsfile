@@ -1,10 +1,7 @@
 pipeline {
     agent any 
-    environment{
-     PATH = "/opt/apache-maven-3.8.6/bin:$PATH
-    {
     stages{
-        stage("Build"){
+        stage("Checkout"){
             steps{
                 git credentialsId: 'Boxfuse', url: 'https://github.com/Raksham7/boxfuse.git'
             }
@@ -23,11 +20,6 @@ pipeline {
             steps{
                 sh 'mvn clean install package'
             }
-        }
-        stage('deployment'){
-           steps{
-            
-           }            
         }
     }
 }      
