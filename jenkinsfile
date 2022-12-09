@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage("Checkout"){
             steps{
-                git credentialsId: 'Boxfuse', url: 'https://github.com/Raksham7/boxfuse.git'
+                git 'https://github.com/Raksham7/boxfuse.git'
             }
         }
         stage("UNIT Testing"){
